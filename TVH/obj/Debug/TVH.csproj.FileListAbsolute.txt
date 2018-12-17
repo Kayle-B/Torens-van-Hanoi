@@ -1,0 +1,10 @@
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.csprojAssemblyReference.cache
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.Form1.resources
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.Properties.Resources.resources
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.csproj.GenerateResource.cache
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.csproj.CoreCompileInputs.cache
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\bin\Debug\TVH.exe.config
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\bin\Debug\TVH.exe
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\bin\Debug\TVH.pdb
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.exe
+D:\Documenten\School\Periode 2\Project\Project 2\Torens-van-Hanoi\TVH\obj\Debug\TVH.pdb
