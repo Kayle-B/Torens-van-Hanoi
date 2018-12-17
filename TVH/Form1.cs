@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Numerics;
 
 namespace TVH
 {
@@ -22,7 +23,7 @@ namespace TVH
         private void forloopButton_Click(object sender, EventArgs e)
         {
             int input;
-            ulong answer = 1;
+            BigInteger answer = 1;
 
             int.TryParse(inputTextBox.Text, out input);
             if (input <= 64 && input >= 1)
@@ -35,7 +36,7 @@ namespace TVH
             }
             else
             {
-                MessageBox.Show("FOEI MAG NIET");
+                MessageBox.Show("Helaas werkt dit niet");
             }
 
         }
@@ -44,18 +45,18 @@ namespace TVH
         private void machtButton_Click_1(object sender, EventArgs e)
         {
             int input;
-            ulong answer;
+            BigInteger answer;
             int.TryParse(inputTextBox.Text, out input);
 
             if (input <= 64 && input >= 1)
             {
 
-                answer = (ulong)(Math.Pow(2, input) - 1);
+                answer = (BigInteger)(Math.Pow(2, input) - 1);
                 outputLabel.Text = string.Format("{0}", answer);
             }
             else
             {
-                MessageBox.Show("FOEI MAG NIET");
+                MessageBox.Show("Helaas werkt dit niet");
             }
         }
     }
