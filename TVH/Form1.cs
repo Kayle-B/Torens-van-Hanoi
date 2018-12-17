@@ -21,15 +21,23 @@ namespace TVH
 
         private void forloopButton_Click(object sender, EventArgs e)
         {
-            double input;
-            double answer = 1;
-            double.TryParse(inputTextBox.Text, out input);
+            int input;
+            ulong answer = 1;
 
-            for(int i= 1; i < input; i++)
+            int.TryParse(inputTextBox.Text, out input);
+            if (input <= 64 && input >= 1)
             {
-                answer = answer * 2 + 1;
+                for (int i = 1; i < input; i++)
+                {
+                    answer = answer * 2 + 1;
+                }
+                outputLabel.Text = string.Format("{0}", answer);
             }
-            outputLabel.Text = string.Format("{0}", answer);
+            else
+            {
+                MessageBox.Show("FOEI MAG NIET");
+            }
+
         }
 
 
@@ -39,9 +47,16 @@ namespace TVH
             ulong answer;
             int.TryParse(inputTextBox.Text, out input);
 
-            answer = (ulong)(Math.Pow(2, input) - 1);
-            outputLabel.Text = string.Format("{0}", answer);
+            if (input <= 64 && input >= 1)
+            {
 
+                answer = (ulong)(Math.Pow(2, input) - 1);
+                outputLabel.Text = string.Format("{0}", answer);
+            }
+            else
+            {
+                MessageBox.Show("FOEI MAG NIET");
+            }
         }
     }
 }
