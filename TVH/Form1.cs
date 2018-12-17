@@ -17,16 +17,7 @@ namespace TVH
             InitializeComponent();
         }
 
-        private void goButton_Click(object sender, EventArgs e)
-        {
-            int input;
-            ulong answer;
-            int.TryParse(inputTextBox.Text, out input);
 
-            answer = (ulong)(Math.Pow(2, input) - 1);
-            outputLabel.Text = string.Format("{0}", answer);
-
-        }
 
         private void forloopButton_Click(object sender, EventArgs e)
         {
@@ -41,10 +32,16 @@ namespace TVH
             outputLabel.Text = string.Format("{0}", answer);
         }
 
-        private void outputLabel_Click(object sender, EventArgs e)
+
+        private void machtButton_Click_1(object sender, EventArgs e)
         {
+            int input;
+            ulong answer;
+            int.TryParse(inputTextBox.Text, out input);
+
+            answer = (ulong)(Math.Pow(2, input) - 1);
+            outputLabel.Text = string.Format("{0}", answer);
 
         }
-
     }
 }

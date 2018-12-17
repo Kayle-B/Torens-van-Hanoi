@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.goButton = new System.Windows.Forms.Button();
+            this.machtButton = new System.Windows.Forms.Button();
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,19 +42,18 @@
             this.forloopButton = new System.Windows.Forms.Button();
             this.recursieButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.timeBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // goButton
+            // machtButton
             // 
-            this.goButton.Location = new System.Drawing.Point(12, 63);
-            this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(82, 23);
-            this.goButton.TabIndex = 0;
-            this.goButton.Text = "Macht";
-            this.goButton.UseVisualStyleBackColor = true;
-            this.goButton.Click += new System.EventHandler(this.goButton_Click);
+            this.machtButton.Location = new System.Drawing.Point(12, 63);
+            this.machtButton.Name = "machtButton";
+            this.machtButton.Size = new System.Drawing.Size(82, 23);
+            this.machtButton.TabIndex = 0;
+            this.machtButton.Text = "Macht";
+            this.machtButton.UseVisualStyleBackColor = true;
+            this.machtButton.Click += new System.EventHandler(this.machtButton_Click_1);
             // 
             // inputTextBox
             // 
@@ -148,7 +147,6 @@
             this.outputLabel.Size = new System.Drawing.Size(16, 17);
             this.outputLabel.TabIndex = 7;
             this.outputLabel.Text = "0";
-            this.outputLabel.Click += new System.EventHandler(this.outputLabel_Click);
             // 
             // forloopButton
             // 
@@ -178,16 +176,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Aantal Moves";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(340, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "0";
-            this.label4.Click += new System.EventHandler(this.outputLabel_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -195,14 +183,13 @@
             this.ClientSize = new System.Drawing.Size(563, 540);
             this.Controls.Add(this.recursieButton);
             this.Controls.Add(this.forloopButton);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.timeBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputTextBox);
-            this.Controls.Add(this.goButton);
+            this.Controls.Add(this.machtButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.timeBox.ResumeLayout(false);
@@ -214,7 +201,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button goButton;
+        private System.Windows.Forms.Button machtButton;
         private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -228,7 +215,6 @@
         private System.Windows.Forms.Button forloopButton;
         private System.Windows.Forms.Button recursieButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
     }
 }
 
