@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timeBox = new System.Windows.Forms.GroupBox();
-            this.mileniaCount = new System.Windows.Forms.Label();
+            this.milleniaCount = new System.Windows.Forms.Label();
             this.secondCount = new System.Windows.Forms.Label();
             this.minuteCount = new System.Windows.Forms.Label();
             this.dayCount = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.outputLabel = new System.Windows.Forms.Label();
             this.forloopButton = new System.Windows.Forms.Button();
             this.recursieButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.hourCount = new System.Windows.Forms.Label();
             this.timeBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             // 
             this.machtButton.Location = new System.Drawing.Point(12, 63);
             this.machtButton.Name = "machtButton";
-            this.machtButton.Size = new System.Drawing.Size(82, 23);
+            this.machtButton.Size = new System.Drawing.Size(82, 35);
             this.machtButton.TabIndex = 0;
             this.machtButton.Text = "Macht";
             this.machtButton.UseVisualStyleBackColor = true;
@@ -82,35 +82,36 @@
             // 
             // timeBox
             // 
-            this.timeBox.Controls.Add(this.mileniaCount);
+            this.timeBox.Controls.Add(this.hourCount);
+            this.timeBox.Controls.Add(this.milleniaCount);
             this.timeBox.Controls.Add(this.secondCount);
             this.timeBox.Controls.Add(this.minuteCount);
             this.timeBox.Controls.Add(this.dayCount);
             this.timeBox.Controls.Add(this.yearCount);
-            this.timeBox.Location = new System.Drawing.Point(12, 318);
+            this.timeBox.Location = new System.Drawing.Point(13, 155);
             this.timeBox.Name = "timeBox";
             this.timeBox.Size = new System.Drawing.Size(418, 210);
             this.timeBox.TabIndex = 6;
             this.timeBox.TabStop = false;
             this.timeBox.Text = "Tijdsduur";
             // 
-            // mileniaCount
+            // milleniaCount
             // 
-            this.mileniaCount.AutoSize = true;
-            this.mileniaCount.Location = new System.Drawing.Point(33, 36);
-            this.mileniaCount.Name = "mileniaCount";
-            this.mileniaCount.Size = new System.Drawing.Size(64, 17);
-            this.mileniaCount.TabIndex = 12;
-            this.mileniaCount.Text = "0 Milenia";
+            this.milleniaCount.AutoSize = true;
+            this.milleniaCount.Location = new System.Drawing.Point(33, 35);
+            this.milleniaCount.Name = "milleniaCount";
+            this.milleniaCount.Size = new System.Drawing.Size(67, 17);
+            this.milleniaCount.TabIndex = 12;
+            this.milleniaCount.Text = "Millenia 0";
             // 
             // secondCount
             // 
             this.secondCount.AutoSize = true;
-            this.secondCount.Location = new System.Drawing.Point(33, 169);
+            this.secondCount.Location = new System.Drawing.Point(33, 163);
             this.secondCount.Name = "secondCount";
             this.secondCount.Size = new System.Drawing.Size(84, 17);
             this.secondCount.TabIndex = 11;
-            this.secondCount.Text = "0 Seconden";
+            this.secondCount.Text = "Seconden 0";
             // 
             // minuteCount
             // 
@@ -119,25 +120,25 @@
             this.minuteCount.Name = "minuteCount";
             this.minuteCount.Size = new System.Drawing.Size(70, 17);
             this.minuteCount.TabIndex = 10;
-            this.minuteCount.Text = "0 Minuten";
+            this.minuteCount.Text = "Minuten 0";
             // 
             // dayCount
             // 
             this.dayCount.AutoSize = true;
-            this.dayCount.Location = new System.Drawing.Point(33, 108);
+            this.dayCount.Location = new System.Drawing.Point(31, 85);
             this.dayCount.Name = "dayCount";
             this.dayCount.Size = new System.Drawing.Size(62, 17);
             this.dayCount.TabIndex = 9;
-            this.dayCount.Text = "0 Dagen";
+            this.dayCount.Text = "Dagen 0";
             // 
             // yearCount
             // 
             this.yearCount.AutoSize = true;
-            this.yearCount.Location = new System.Drawing.Point(33, 71);
+            this.yearCount.Location = new System.Drawing.Point(33, 58);
             this.yearCount.Name = "yearCount";
-            this.yearCount.Size = new System.Drawing.Size(64, 17);
+            this.yearCount.Size = new System.Drawing.Size(56, 17);
             this.yearCount.TabIndex = 8;
-            this.yearCount.Text = "0 Jaaren";
+            this.yearCount.Text = "Jaren 0";
             // 
             // outputLabel
             // 
@@ -152,7 +153,7 @@
             // 
             this.forloopButton.Location = new System.Drawing.Point(100, 63);
             this.forloopButton.Name = "forloopButton";
-            this.forloopButton.Size = new System.Drawing.Size(82, 23);
+            this.forloopButton.Size = new System.Drawing.Size(82, 35);
             this.forloopButton.TabIndex = 8;
             this.forloopButton.Text = "For-Loop";
             this.forloopButton.UseVisualStyleBackColor = true;
@@ -162,30 +163,29 @@
             // 
             this.recursieButton.Location = new System.Drawing.Point(188, 63);
             this.recursieButton.Name = "recursieButton";
-            this.recursieButton.Size = new System.Drawing.Size(82, 23);
+            this.recursieButton.Size = new System.Drawing.Size(82, 35);
             this.recursieButton.TabIndex = 9;
             this.recursieButton.Text = "Recursie";
             this.recursieButton.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // hourCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(337, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Aantal Moves";
+            this.hourCount.AutoSize = true;
+            this.hourCount.Location = new System.Drawing.Point(31, 112);
+            this.hourCount.Name = "hourCount";
+            this.hourCount.Size = new System.Drawing.Size(51, 17);
+            this.hourCount.TabIndex = 13;
+            this.hourCount.Text = "Uren 0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 540);
+            this.ClientSize = new System.Drawing.Size(563, 385);
             this.Controls.Add(this.recursieButton);
             this.Controls.Add(this.forloopButton);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.timeBox);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputTextBox);
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox timeBox;
-        private System.Windows.Forms.Label mileniaCount;
+        private System.Windows.Forms.Label milleniaCount;
         private System.Windows.Forms.Label secondCount;
         private System.Windows.Forms.Label minuteCount;
         private System.Windows.Forms.Label dayCount;
@@ -214,7 +214,7 @@
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Button forloopButton;
         private System.Windows.Forms.Button recursieButton;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label hourCount;
     }
 }
 

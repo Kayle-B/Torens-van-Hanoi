@@ -39,6 +39,39 @@ namespace TVH
                 MessageBox.Show("Helaas werkt dit niet");
             }
 
+            // DIT TELT DE TIJD
+            {
+                string sSeconds = outputLabel.Text;
+                BigInteger iSeconds = BigInteger.Parse(sSeconds);
+
+                BigInteger iMillenia = iSeconds / 31576908800;
+                iSeconds = iSeconds % 31576908800;
+
+                BigInteger iYears = iSeconds / 31556926;
+                iSeconds = iSeconds % 31556926;
+
+                BigInteger iDays = iSeconds / 86400;
+                iSeconds = iSeconds % 86400;
+
+                BigInteger iHours = iSeconds / 3600;
+                iSeconds = iSeconds % 3600;
+
+                BigInteger iMinutes = iSeconds / 60;
+                iSeconds = iSeconds % 60;
+                // DIT HIERBOVEN TELT DE TIJD 
+
+
+
+                milleniaCount.Text = "Millenia: " + iMillenia.ToString();
+                yearCount.Text = "Jaren: " + iYears.ToString();
+                dayCount.Text = "Dagen: " + iDays.ToString();
+                hourCount.Text = "Uren: " + iHours.ToString();
+                minuteCount.Text = "Minuten: " + iMinutes.ToString();
+                secondCount.Text = "Seconden: " + iSeconds.ToString();
+
+
+            }
+
         }
 
 
@@ -58,6 +91,40 @@ namespace TVH
             {
                 MessageBox.Show("Helaas werkt dit niet");
             }
+
+
+
+
+
+            // DIT TELT DE TIJD
+            {
+                string sSeconds = outputLabel.Text;
+                BigInteger iSeconds = BigInteger.Parse(sSeconds);
+
+                BigInteger iMillenia = iSeconds / 31576908800;
+                iSeconds = iSeconds % 31576908800;
+
+                BigInteger iYears = iSeconds / 31556926;
+                iSeconds = iSeconds % 31556926;
+
+                BigInteger iDays = iSeconds / 86400;
+                iSeconds = iSeconds % 86400;
+
+                BigInteger iHours = iSeconds / 3600;
+                iSeconds = iSeconds % 3600;
+
+                BigInteger iMinutes = iSeconds / 60;
+                iSeconds = iSeconds % 60;
+                // DIT HIERBOVEN TELT DE TIJD
+
+                milleniaCount.Text = "Millenia: " + iMillenia.ToString();
+                yearCount.Text = "Jaren: " + iYears.ToString();
+                dayCount.Text = "Dagen: " + iDays.ToString();
+                hourCount.Text = "Uren: " + iHours.ToString();
+                minuteCount.Text = "Minuten: " + iMinutes.ToString();
+                secondCount.Text = "Seconden: " + iSeconds.ToString();
+            }
+
         }
     }
 }
